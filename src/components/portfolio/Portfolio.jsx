@@ -1,31 +1,31 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
   {
     id: 1,
-    title: "Todo",
-    img: "https://plus.unsplash.com/premium_photo-1684331678124-ff62c82cef7a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VG9kb3xlbnwwfDB8MHx8fDA%3D",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate, dolorem ea vitae delectus ullam nulla sint nostrum accusantium optio eligendi, error soluta eveniet cum?",
+    title: "React Commerce",
+    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
   {
     id: 2,
-    title: "Book Search",
-    img: "https://images.unsplash.com/photo-1704121355552-10ac4d5b1677?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate, dolorem ea vitae delectus ullam nulla sint nostrum accusantium optio eligendi, error soluta eveniet cum?",
+    title: "Next.js Blog",
+    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
   {
     id: 3,
-    title: "Login Page",
-    img: "https://images.unsplash.com/photo-1704026437902-699fa6a8c98d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate, dolorem ea vitae delectus ullam nulla sint nostrum accusantium optio eligendi, error soluta eveniet cum?",
+    title: "Vanilla JS App",
+    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
   {
     id: 4,
-    title: "Rock Paper Scissors",
-    img: "https://plus.unsplash.com/premium_photo-1669234305308-c2658f1fbf12?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate, dolorem ea vitae delectus ullam nulla sint nostrum accusantium optio eligendi, error soluta eveniet cum?",
+    title: "Music App",
+    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
 ];
 
@@ -68,6 +68,7 @@ const Portfolio = () => {
     stiffness: 100,
     damping: 30,
   });
+
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
@@ -75,7 +76,7 @@ const Portfolio = () => {
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (
-        <Single key={item.id} item={item} />
+        <Single item={item} key={item.id} />
       ))}
     </div>
   );
