@@ -7,7 +7,7 @@
   position: relative;
 
   .wrapper {
-    max-width: 1200px;
+    max-width: 1300px;
     height: 100%;
     margin: auto;
 
@@ -34,7 +34,7 @@
       }
 
       h1 {
-        font-size: 88px;
+        font-size: 60px;
 
         @include mobile {
           font-size: 36px;
@@ -44,10 +44,10 @@
       .buttons {
         button {
           padding: 20px;
-          border: 1px solid white;
           border-radius: 10px;
-          background-color: transparent;
-          color: white;
+          background-color: orange;
+          color: black;
+          font-weight: 500;
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300;

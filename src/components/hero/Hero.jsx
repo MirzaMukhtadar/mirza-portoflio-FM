@@ -48,8 +48,10 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h1 textVariants={textVariants}>Hello, I'm Zubair</motion.h1>
-          <motion.h2 variants={textVariants}>Software Engineer</motion.h2>
+          <motion.h1 textVariants={textVariants}>
+            Hello, Mirza Mukhtadar
+          </motion.h1>
+          <motion.h2 variants={textVariants}>Front-End Developer</motion.h2>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
               See the latest Works
