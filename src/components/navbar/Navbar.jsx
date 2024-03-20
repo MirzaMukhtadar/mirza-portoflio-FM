@@ -15,7 +15,7 @@ const Navbar = () => {
         >
           Zubair
         </motion.span>
-        <div className="social-links">
+        <div className="social">
           <a href="">
             <img src="../../../public/instagram.png" alt="" />
           </a>
