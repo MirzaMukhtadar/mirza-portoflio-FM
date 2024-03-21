@@ -28,6 +28,25 @@ section {
   overflow: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: orange;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: orange;
+}
+
 @mixin mobile {
   @media (max-width: 738px) {
     @content;
