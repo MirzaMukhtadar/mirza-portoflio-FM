@@ -13,17 +13,17 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Zubair
+          Mirza Mukhtadar
         </motion.span>
         <div className="social">
           <a href="">
-            <img src="../../../public/instagram.png" alt="" />
+            <img src="../../../public/linkedin.svg" alt="" />
           </a>
           <a href="">
-            <img src="../../../public/dribbble.png" alt="" />
+            <img src="../../../public/icons8-github-24.png" alt="" />
           </a>
           <a href="">
-            <img src="../../../public/dribbble.png" alt="" />
+            <img src="../../../public/twitter.svg" alt="" />
           </a>
         </div>
       </div>
